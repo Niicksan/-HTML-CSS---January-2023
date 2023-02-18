@@ -1,0 +1,86 @@
+/* TODO: Add responsive styles here... */
+/* Landing */
+@media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .navbar .navbar-brand {
+        margin: 0;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .container-fluid .container {
+        text-align: center;
+    }
+
+    .container-fluid .container h1 {
+        margin-top: 3rem;
+    }
+
+    .container-fluid .hero-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .hero-btns a:first-child {
+        min-width: 280px;
+    }
+
+    /* Anything you need */
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .service-box {
+        text-align: left;
+    }
+
+    .side2-img img {
+        top: 1470px;
+    }
+
+    /* About */
+    .about {
+        margin-bottom: 4rem;
+    }
+
+    .about .row,
+    #contact-us .row {
+        text-align: center;
+    }
+
+    .about .row {
+        gap: 80px;
+        margin-bottom: 1rem;
+    }
+
+    /* Contacts */
+    #contact-us {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact .contact-btn {
+        display: none;
+    }
+
+    /* Footer */
+    .contact-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h6 {
+        padding-bottom: 0px;
+    }
+}

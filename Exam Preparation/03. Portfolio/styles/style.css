@@ -1,0 +1,224 @@
+:root {
+    --gray-light: #efefef;
+    --gray-dark: #909090;
+    --gray-black: #222222;
+}
+
+/* Global styles */
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: var(--gray-black);
+}
+
+.page-section {
+    background-color: var(--gray-light);
+    max-width: 1920px;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 3rem 5rem;
+    margin: 0 auto 1.5rem;
+}
+
+.section-flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-flexed .section-info {
+    flex: 0 0 50%;
+}
+
+.section-flexed .section-img {
+    flex: 0 1 35%;
+}
+
+.page-section .title {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+.page-section .desc {
+    font-style: italic;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.page-section .divider.vertical {
+    background-color: var(--gray-black);
+    height: 6rem;
+    width: 1px;
+}
+
+/* Hero */
+#hero.page-section {
+    position: relative;
+}
+
+#hero .navigation {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 1.2rem;
+}
+
+#hero .hero-img {
+    position: absolute;
+    bottom: 0px;
+    right: 5rem;
+    width: 50%;
+}
+
+#image {
+    padding: 0;
+}
+
+#image .image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Camera */
+#camera .socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 0;
+}
+
+#camera .socials .social {
+    background-color: var(--gray-dark);
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+}
+
+#camera .socials .social i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+}
+
+/* Featured */
+#featured .section-info {
+    flex: 0 0 30%;
+}
+
+#featured .divider.vertical {
+    background-color: red;
+    height: 10rem;
+    width: 100px;
+    position: absolute;
+    top: 0;
+}
+
+#featured img {
+    width: 100%;
+}
+
+#featured .section-img {
+    flex: 0 1 45%;
+}
+
+/* Gallery */
+#gallery {
+    display: flex;
+    align-items: center;
+}
+
+#gallery .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#gallery .list .picture:hover {
+    transform: scale(1.5);
+}
+
+/* Contacts */
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#contacts header {
+    width: 50%;
+    text-align: center;
+    margin-top: auto;
+}
+
+#contacts h2 {
+    font-weight: normal;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#contacts header P {
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+#contacts .form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "email subject"
+        "msg msg"
+        "submit submit";
+    gap: 1.25rem;
+    min-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#contacts .form input,
+#contacts .form textarea {
+    background: transparent;
+    border: 1px solid var(--gray-black);
+    width: 100%;
+    padding: 0.25rem;
+}
+
+#contacts .form textarea {
+    resize: none;
+}
+
+#contacts .form .email {
+    grid-area: email;
+}
+
+#contacts .form .subject {
+    grid-area: subject;
+}
+
+#contacts .form .msg {
+    grid-area: msg;
+}
+
+#contacts .form .btn {
+    background-color: var(--gray-black);
+    border: 1px solid var(--gray-black);
+    grid-area: submit;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+}
+
+#contacts footer {
+    padding: 1rem 0;
+    justify-self: flex-end;
+    margin-top: auto;
+}
