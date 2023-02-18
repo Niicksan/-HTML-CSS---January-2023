@@ -1,0 +1,243 @@
+:root {
+    --clr-red: #e30914;
+    --clr-grey: #222222;
+    --clr-white: white;
+    --clr-black: black;
+}
+
+/* Global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--clr-grey);
+    color: var(--clr-white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.main-wrapper {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 1rem;
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: calc(width - margin);
+    width: 100%;
+    max-width: 1920px;
+    height: 60px;
+    padding: 0 3rem;
+    margin: 40px 0;
+}
+
+/* Hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 1) 100%);
+    opacity: 0.65;
+}
+
+#hero .hero-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#hero .wrapper {
+    position: relative;
+    width: 35%;
+}
+
+#hero .title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+#hero .subtitle,
+#hero .form,
+#hero .desc {
+    margin-bottom: 1.5rem;
+}
+
+#hero .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.form input {
+    border: 1px solid var(--clr-gray);
+    border: 4px;
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+}
+
+.form .btn {
+    flex-shrink: 0;
+    width: 30%;
+    font-size: 1.2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.76rem 1.1rem;
+}
+
+#hero .desc {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+/* Sections */
+.wrapper-container {
+    background-color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 4rem 2rem;
+}
+
+.content-section .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section .content {
+    width: 40%;
+    margin-bottom: 0;
+}
+
+.content-section .img {
+    margin-bottom: 0;
+}
+
+#enjoy .img,
+#everywhere .img {
+    width: 50%;
+}
+
+.content .title {
+    font-size: 2.5rem;
+}
+
+.content .desc {
+    font-size: 1.5rem;
+}
+
+.content-section:nth-of-type(odd) .content {
+    order: 2;
+}
+
+#questions .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#questions h2 {
+    font-size: 2.5rem;
+}
+
+#questions .list-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 80%;
+    margin-bottom: 4rem;
+}
+
+#questions .list-questions li {
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    padding: 20px 20px;
+}
+
+#questions .form {
+    width: 80%;
+    justify-content: center;
+}
+
+#footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    color: #b2b2b2;
+}
+
+#footer .lists-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.lists-holder li {
+    line-height: 2;
+}
