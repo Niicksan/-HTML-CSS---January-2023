@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #f6e0b5;
+    --font-color-purple: #66545e;
+    --font-color-white: white;
+}
+
+body {
+    background-color: #f6e0b5;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 786px;
+    margin: 0 auto;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    color: #66545e;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    height: 365px;
+}
+
+.section .article {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 48%;
+    color: white;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 20px 70px;
+}
+
+.article .img {
+    width: 600px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.article p {
+    background-color: #66545e;
+    padding-left: 6px;
+    font-weight: 500;
+}
+
+.aside {
+    width: 22%;
+    margin-left: 16px;
+    align-self: flex-start;
+}
+
+.aside ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.aside p {
+    font-weight: 500;
+}
+
+.fas {
+    color: #66545e;
+    padding-right: 6px;
+}

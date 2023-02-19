@@ -1,0 +1,103 @@
+@media (max-width: 600px) {
+
+    /* Header */
+    .home-container01,
+    .home-left,
+    .home-right {
+        display: none;
+    }
+
+    .home-middle .navbar-logo-title {
+        margin: 0;
+    }
+
+    .home-hero.section-container {
+        padding-top: 48px;
+    }
+
+    .home-hero1 {
+        flex-direction: column;
+    }
+
+    .home-info,
+    .home-container04,
+    .home-btn-group {
+        justify-content: center;
+    }
+
+    /*  */
+    .home-main {
+        padding-bottom: 48px;
+    }
+
+    /* Shop by category */
+    .home-cards-container {
+        gap: 16px;
+    }
+
+    .category-card-category-card {
+        width: 48%;
+    }
+
+    .category-card-category-card img {
+        width: 100%;
+        height: 280px;
+    }
+
+    /* LookBooks */
+    .home-full-width-banner.section-container {
+        flex-direction: column;
+    }
+
+    .home-left4 {
+        padding: 48px 0;
+    }
+
+    .home-left4 .home-content {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .home-content .home-text30 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .home-full-width-banner .home-image6 {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Our Blog */
+    .section-container {
+        padding-top: 48px;
+    }
+
+    .section-heading-section-heading {
+        margin-bottom: 48px;
+    }
+
+    .blog-post-card-blog-post-card {
+        max-width: none;
+        width: 100%;
+    }
+
+    /* Footer */
+    .home-footer1,
+    .home-footer1 .home-links-container {
+        flex-direction: column;
+    }
+
+    .home-footer1 {
+        padding-top: 48px;
+        padding-bottom: 15px;
+    }
+
+    .home-footer1 .home-container09 {
+        order: 2;
+    }
+
+    .home-links-container .home-container12 {
+        margin-bottom: 48px;
+    }
+}
